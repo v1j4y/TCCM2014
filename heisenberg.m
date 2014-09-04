@@ -3,7 +3,9 @@
 (* generate CGC *)
 Print["Heisenberg"]
 
-AppendTo[$Path, ToFileName[$HomeDirectory,"/tmp/"]];
+(*  AppendTo[$Path, ToFileName[$HomeDirectory,$]];
+  *)
+SetDirectory[NotebookDirectory[]];
 Get["clebsh`"];
 
 v={{1,0}};
